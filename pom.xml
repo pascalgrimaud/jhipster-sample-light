@@ -11,7 +11,12 @@
   <description>JHipster Project</description>
   <packaging>jar</packaging>
 
-  <!-- jhipster-needle-maven-parent -->
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.5.6</version>
+    <relativePath/>
+  </parent>
 
   <repositories>
     <!-- jhipster-needle-maven-repository -->
@@ -33,10 +38,19 @@
     <compiler-plugin.version>3.8.1</compiler-plugin.version>
     <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
     <jacoco.version>0.8.7</jacoco.version>
+    <spring-boot.version>2.5.6</spring-boot.version>
     <!-- jhipster-needle-maven-property -->
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+    </dependency>
     <!-- jhipster-needle-maven-add-dependency -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -60,6 +74,11 @@
       <groupId>org.mockito</groupId>
       <artifactId>mockito-inline</artifactId>
       <version>${mockito.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
     <!-- jhipster-needle-maven-add-dependency-test -->
@@ -128,6 +147,11 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>${spring-boot.version}</version>
       </plugin>
       <!-- jhipster-needle-maven-add-plugin -->
     </plugins>
