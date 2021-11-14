@@ -7,6 +7,7 @@ import org.springframework.web.cors.CorsConfiguration;
 @Configuration
 @ConfigurationProperties(prefix = "application.cors", ignoreUnknownFields = false)
 public class ApplicationCorsProperties {
+
   private final CorsConfiguration cors = new CorsConfiguration();
 
   public CorsConfiguration getCors() {
