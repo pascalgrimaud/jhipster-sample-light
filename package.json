@@ -1,0 +1,25 @@
+{
+  "name": "jhipster",
+  "version": "0.0.0",
+  "private": true,
+  "description": "JHipster Project",
+  "license": "UNLICENSED",
+  "scripts": {
+    "prepare": "husky install",
+    "prettier:check": "prettier --check \"{,src/**/}*.{md,json,yml,html,js,ts,tsx,css,scss,vue,java}\"",
+    "prettier:format": "prettier --write \"{,src/**/}*.{md,json,yml,html,js,ts,tsx,css,scss,vue,java}\""
+  },
+  "devDependencies": {
+    "husky": "7.0.4",
+    "lint-staged": "12.1.2",
+    "prettier": "2.5.0",
+    "prettier-plugin-java": "1.6.0",
+    "prettier-plugin-packagejson": "2.2.15"
+  },
+  "engines": {
+    "node": ">=16.13.0"
+  },
+  "cacheDirectories": [
+    "node_modules"
+  ]
+}
