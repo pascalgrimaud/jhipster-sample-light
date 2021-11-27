@@ -1,8 +1,6 @@
 package com.mycompany.myapp.technical.security.jwt;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.mycompany.myapp.technical.security.jwt.JWTFilter;
-import com.mycompany.myapp.technical.security.jwt.TokenProvider;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import org.slf4j.Logger;
