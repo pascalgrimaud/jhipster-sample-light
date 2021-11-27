@@ -1,4 +1,4 @@
-package com.mycompany.myapp.technical.primary.exception;
+package com.mycompany.myapp.technical.infrastructure.primary.exception;
 
 import java.net.URI;
 import java.util.List;
@@ -22,7 +22,6 @@ import org.zalando.problem.Problem;
 import org.zalando.problem.ProblemBuilder;
 import org.zalando.problem.StatusType;
 import org.zalando.problem.spring.web.advice.ProblemHandling;
-import org.zalando.problem.spring.web.advice.security.SecurityAdviceTrait;
 import org.zalando.problem.violations.ConstraintViolationProblem;
 
 /**

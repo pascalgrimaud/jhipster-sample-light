@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/authenticate")
-public class AuthenticationResource {
+class AuthenticationResource {
 
   private final Logger log = LoggerFactory.getLogger(AuthenticationResource.class);
 
@@ -38,15 +38,15 @@ public class AuthenticationResource {
   }
 
   @PostMapping
-  public ResponseEntity<JWTToken> authorize(@Valid @RequestBody LoginVM loginVM) {
+  public ResponseEntity<JWTToken> authorize(@Valid @RequestBody LoginDTO loginDTO) {
     UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
-      loginVM.getUsername(),
-      loginVM.getPassword()
+      loginDTO.getUsername(),
+      loginDTO.getPassword()
     );
 
     Authentication authentication = authenticationManagerBuilder.getObject().authenticate(authenticationToken);
     SecurityContextHolder.getContext().setAuthentication(authentication);
-    String jwt = tokenProvider.createToken(authentication, loginVM.isRememberMe());
+    String jwt = tokenProvider.createToken(authentication, loginDTO.isRememberMe());
     HttpHeaders httpHeaders = new HttpHeaders();
     httpHeaders.add(JWTFilter.AUTHORIZATION_HEADER, "Bearer " + jwt);
     return new ResponseEntity<>(new JWTToken(jwt), httpHeaders, HttpStatus.OK);

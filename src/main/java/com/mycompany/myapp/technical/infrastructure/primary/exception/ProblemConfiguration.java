@@ -1,4 +1,4 @@
-package com.mycompany.myapp.technical.primary.exception;
+package com.mycompany.myapp.technical.infrastructure.primary.exception;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

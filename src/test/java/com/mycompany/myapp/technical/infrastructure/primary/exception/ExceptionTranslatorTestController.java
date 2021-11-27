@@ -1,4 +1,4 @@
-package com.mycompany.myapp.technical.primary.exception;
+package com.mycompany.myapp.technical.infrastructure.primary.exception;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
