@@ -39,6 +39,9 @@
     <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
     <jacoco.version>0.8.7</jacoco.version>
     <spring-boot.version>2.6.0</spring-boot.version>
+    <springfox.version>3.0.0</springfox.version>
+    <problem-spring.version>0.27.0</problem-spring.version>
+    <problem-spring-web.version>${problem-spring.version}</problem-spring-web.version>
     <!-- jhipster-needle-maven-property -->
   </properties>
 
@@ -50,6 +53,24 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.springfox</groupId>
+      <artifactId>springfox-boot-starter</artifactId>
+      <version>${springfox.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.zalando</groupId>
+      <artifactId>problem-spring-web</artifactId>
+      <version>${problem-spring-web.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-validation</artifactId>
     </dependency>
     <!-- jhipster-needle-maven-add-dependency -->
     <dependency>
