@@ -1,8 +1,9 @@
 package com.mycompany.myapp.security.jwt.infrastructure.config;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.*;
 
 import com.mycompany.myapp.UnitTest;
+import com.mycompany.myapp.security.jwt.domain.AuthoritiesConstants;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import java.util.Collections;
@@ -26,13 +27,10 @@ class JWTFilterTest {
 
   @BeforeEach
   public void setup() {
-    JHipsterProperties jHipsterProperties = new JHipsterProperties();
+    ApplicationSecurityProperties properties = new ApplicationSecurityProperties();
     String base64Secret = "fd54a45s65fds737b9aafcb3412e07ed99b267f33413274720ddbb7f6c5e64e9f14075f2d7ed041592f0b7657baf8";
-    jHipsterProperties.getSecurity().getAuthentication().getJwt().setBase64Secret(base64Secret);
-
-    SecurityMetersService securityMetersService = new SecurityMetersService(new SimpleMeterRegistry());
-
-    tokenProvider = new TokenProvider(jHipsterProperties, securityMetersService);
+    properties.getAuthentication().getJwt().setBase64Secret(base64Secret);
+    tokenProvider = new TokenProvider(properties);
     ReflectionTestUtils.setField(tokenProvider, "key", Keys.hmacShaKeyFor(Decoders.BASE64.decode(base64Secret)));
 
     ReflectionTestUtils.setField(tokenProvider, "tokenValidityInMilliseconds", 60000);
