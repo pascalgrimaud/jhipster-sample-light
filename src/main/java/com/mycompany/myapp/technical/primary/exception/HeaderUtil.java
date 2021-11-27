@@ -1,4 +1,4 @@
-package com.mycompany.myapp.technical.infrastructure.primary.exception;
+package com.mycompany.myapp.technical.primary.exception;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;

@@ -1,4 +1,4 @@
-package com.mycompany.myapp.technical.security.jwt;
+package com.mycompany.myapp.security.jwt.infrastructure.primary.rest;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;

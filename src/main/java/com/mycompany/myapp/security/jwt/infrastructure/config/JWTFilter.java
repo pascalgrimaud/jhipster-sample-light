@@ -1,5 +1,6 @@
-package com.mycompany.myapp.technical.security.jwt;
+package com.mycompany.myapp.security.jwt.infrastructure.config;
 
+import com.mycompany.myapp.security.jwt.infrastructure.config.TokenProvider;
 import java.io.IOException;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

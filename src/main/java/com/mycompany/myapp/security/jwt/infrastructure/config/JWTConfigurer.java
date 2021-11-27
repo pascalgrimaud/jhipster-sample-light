@@ -1,5 +1,7 @@
-package com.mycompany.myapp.technical.security.jwt;
+package com.mycompany.myapp.security.jwt.infrastructure.config;
 
+import com.mycompany.myapp.security.jwt.infrastructure.config.JWTFilter;
+import com.mycompany.myapp.security.jwt.infrastructure.config.TokenProvider;
 import org.springframework.security.config.annotation.SecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.DefaultSecurityFilterChain;

@@ -1,5 +1,6 @@
-package com.mycompany.myapp.technical.security.jwt;
+package com.mycompany.myapp.security.jwt.infrastructure.config;
 
+import com.mycompany.myapp.security.jwt.domain.AuthoritiesConstants;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpMethod;

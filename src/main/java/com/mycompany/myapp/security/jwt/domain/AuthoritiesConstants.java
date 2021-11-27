@@ -1,4 +1,4 @@
-package com.mycompany.myapp.technical.security.jwt;
+package com.mycompany.myapp.security.jwt.domain;
 
 /**
  * Constants for Spring Security authorities.

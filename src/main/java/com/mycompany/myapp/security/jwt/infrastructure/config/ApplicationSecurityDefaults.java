@@ -1,4 +1,4 @@
-package com.mycompany.myapp.technical.security.jwt;
+package com.mycompany.myapp.security.jwt.infrastructure.config;
 
 @SuppressWarnings("java:S2386")
 public interface ApplicationSecurityDefaults {

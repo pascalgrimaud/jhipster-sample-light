@@ -1,4 +1,4 @@
-package com.mycompany.myapp.technical.infrastructure.primary.exception;
+package com.mycompany.myapp.technical.primary.exception;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.anyString;

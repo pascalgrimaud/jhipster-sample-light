@@ -1,4 +1,4 @@
-package com.mycompany.myapp.technical.security.jwt;
+package com.mycompany.myapp.security.jwt.infrastructure.config;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;

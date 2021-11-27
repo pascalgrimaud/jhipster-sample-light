@@ -1,4 +1,4 @@
-package com.mycompany.myapp.technical.infrastructure.primary.exception;
+package com.mycompany.myapp.technical.primary.exception;
 
 import java.net.URI;
 import java.util.List;
@@ -30,7 +30,7 @@ import org.zalando.problem.violations.ConstraintViolationProblem;
  * The error response follows RFC7807 - Problem Details for HTTP APIs (https://tools.ietf.org/html/rfc7807).
  */
 @ControllerAdvice
-public class ExceptionTranslator implements ProblemHandling, SecurityAdviceTrait {
+public class ExceptionTranslator implements ProblemHandling {
 
   private static final String FIELD_ERRORS_KEY = "fieldErrors";
   private static final String MESSAGE_KEY = "message";

@@ -1,4 +1,4 @@
-package com.mycompany.myapp.technical.infrastructure.primary.exception;
+package com.mycompany.myapp.technical.primary.exception;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
