@@ -1,0 +1,18 @@
+diff --git a/pom.xml b/pom.xml
+index c9a8342..387cd3c 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -146,6 +146,13 @@
+         <configuration>
+           <source>${java.version}</source>
+           <target>${java.version}</target>
++          <annotationProcessorPaths>
++            <path>
++              <groupId>org.springframework.boot</groupId>
++              <artifactId>spring-boot-configuration-processor</artifactId>
++              <version>${spring-boot.version}</version>
++            </path>
++          </annotationProcessorPaths>
+         </configuration>
+       </plugin>
+       <plugin>
