@@ -1,1 +1,1 @@
-# jhipster-sample-light
+# jhipster-sample-lite
